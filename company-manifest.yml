@@ -1,0 +1,11 @@
+---
+applications:
+  - name: company
+    memory: 750M
+    instances: 2
+    path: build/libs/company.jar
+    buildpacks:
+      - java_buildpack
+    random-route: true
+    bind:
+      - company-mysql
