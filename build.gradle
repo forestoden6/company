@@ -26,11 +26,16 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
-	compile('mysql:mysql-connector-java')
 	compile('org.springframework.boot:spring-boot-starter-cloud-connectors')
+	compile('org.springframework.cloud:spring-cloud-starter')
+	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	compile('io.pivotal.spring.cloud:spring-cloud-services-starter-config-client')
+	compile('mysql:mysql-connector-java')
+	compile('org.springframework.boot:spring-boot-devtools')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	runtime('com.h2database:h2')
 }
