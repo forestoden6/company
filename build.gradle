@@ -28,6 +28,7 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
 	compile('mysql:mysql-connector-java')
 	compile('org.springframework.boot:spring-boot-starter-cloud-connectors')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
@@ -37,5 +38,6 @@ dependencies {
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.RELEASE"
+		mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:2.0.1.RELEASE"
 	}
 }
