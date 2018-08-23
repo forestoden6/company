@@ -1,12 +1,11 @@
 ---
 applications:
-  - name: company
+  - name: company-foden
     memory: 1G
     instances: 2
     path: build/libs/company.jar
     buildpacks:
       - java_buildpack
-    random-route: true
     bind:
       - company-mysql
       - service-registry
