@@ -41,9 +41,14 @@ dependencies {
 	runtime('com.h2database:h2')
 }
 
+ext {
+        springCloudVersion = 'Finchley.RELEASE'
+}
+
+
 dependencyManagement {
 	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.RELEASE"
 		mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:2.0.1.RELEASE"
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
